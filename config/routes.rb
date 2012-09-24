@@ -2,6 +2,9 @@ JsonYaml::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
+  get 'json/yaml' => 'converter#json_to_yaml'
+  get 'yaml/json' => 'converter#yaml_to_json'
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
